@@ -3,7 +3,8 @@
   "version": "1.0.2",
   "description": "Collection of console mini-games like \"Brain Games\"",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
@@ -28,7 +29,7 @@
   "scripts": {
     "babel-node": "babel-node",
     "build": "cross-env NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "eslint": "eslint",
+    "eslint": "eslint ./src",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
