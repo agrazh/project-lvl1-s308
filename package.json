@@ -8,13 +8,22 @@
   "files": [
     "dist"
   ],
-  "keywords": ["study ptoject", "mini games", "console"],
+  "keywords": [
+    "study ptoject",
+    "mini games",
+    "console"
+  ],
   "devDependencies": {
     "babel-cli": "*",
     "babel-core": "*",
+    "babel-eslint": "^8.2.5",
     "babel-preset-env": "*",
     "babel-preset-stage-0": "*",
-    "cross-env": "^5.2.0"
+    "cross-env": "^5.2.0",
+    "eslint": "^5.1.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.13.0"
   },
   "scripts": {
     "babel-node": "babel-node",
