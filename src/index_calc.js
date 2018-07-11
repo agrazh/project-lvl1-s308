@@ -64,6 +64,7 @@ export const playCalcGame = () => {
     console.log(`Question: ${question[0]} ${question[1]} ${question[2]}`);
     
     const answer = readlineSync.question('Your answer: ');
+
     const correctAnswer = calculateExpression(question);
     const resultOfValidation = validateAnswer(correctAnswer, answer);
 
@@ -99,3 +100,5 @@ playCalcGame();
 
   console.log(`Congratulations, ${userName}!`);
 }; */
+
+/*Travis CI test*/
