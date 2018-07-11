@@ -7,6 +7,8 @@ export const getName = () => {
   return name;
 };
 
+// getName(); // если раскомментировать, то brain-games.js два раза запросит ввести имя :-/
+
 export const playEvenGame = () => {
   const isEven = number => (number % 2 === 0 ? 'yes' : 'no');
 
@@ -29,5 +31,3 @@ export const playEvenGame = () => {
 
   console.log(`Congratulations, ${userName}!`);
 };
-
-// askForName(); // если раскомментировать, то brain-games.js два раза запросит ввести имя :-/
