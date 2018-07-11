@@ -10,7 +10,7 @@ script:
 # safelist
 branches:
   only:
-- master
+    - master
 
 # blocklist
 branches:
