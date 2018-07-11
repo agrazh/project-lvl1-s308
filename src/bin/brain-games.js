@@ -4,7 +4,7 @@ import readlineSync from 'readline-sync';
 // import { getName } from '..';
 
 const askForName = () => {
-  const name = readlineSync.question('May I have your name? ');
+  const name = readlineSync.question('May I have your name??? ');
   console.log(`Hello, ${name}!\n`);
   return name;
 };
