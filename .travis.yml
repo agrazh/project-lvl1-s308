@@ -6,3 +6,8 @@ node_js:
 
 script:
   - make lint
+
+# blacklist
+branches:
+  except:
+    - branch1
