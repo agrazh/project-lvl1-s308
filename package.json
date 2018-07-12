@@ -1,11 +1,12 @@
 {
   "name": "prj1_brain_games",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Collection of console mini-games like \"Brain Games\"",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
     "brain-even": "dist/bin/brain-even.js",
-    "brain-calc": "dist/bin/brain-calc.js"
+    "brain-calc": "dist/bin/brain-calc.js",
+    "brain-gcd": "dist/bin/brain-gcd.js"
   },
   "files": [
     "dist"
