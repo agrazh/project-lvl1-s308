@@ -3,7 +3,8 @@
 */
 
 import { randomInt } from 'mathjs';
-import { playGame } from '..';
+import playGame from '..';
+// import { playGame } from '..'; - так не импортирует
 
 const gameTask = 'Answer "yes" if number even otherwise answer "no".';
 
@@ -13,10 +14,12 @@ const genQuestionAndCorrectAnswer = () => {
   const questionElements = randomInt(1, 99);
   const question = (`Question: ${questionElements}`);
   const correctAnswer = isEven(questionElements) ? 'yes' : 'no';
-  
+
   return [question, correctAnswer];
 };
 
-export const playEvenGame = () => {
-  playGame(gameTask, genQuestionAndCorrectAnswer)
+const playEvenGame = () => {
+  playGame(gameTask, genQuestionAndCorrectAnswer);
 };
+
+export default playEvenGame;

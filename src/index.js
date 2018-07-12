@@ -12,15 +12,15 @@ const getName = () => {
 };
 
 const validateAnswer = (correctAnswer, answer) => {
-  if (correctAnswer == answer) {
+  if (String(correctAnswer) === String(answer)) {
     console.log('Correct!');
     return true;
   }
 
   return false;
-}
+};
 
-export const playGame = (gameTask, genQuestionAndCorrectAnswer) => {
+const playGame = (gameTask, genQuestionAndCorrectAnswer) => {
   console.log('Welcome to Brain Games!');
   console.log(`${gameTask}\n`);
   const userName = getName();
@@ -29,7 +29,7 @@ export const playGame = (gameTask, genQuestionAndCorrectAnswer) => {
     const questionAndCorrectAnswer = genQuestionAndCorrectAnswer();
     const question = questionAndCorrectAnswer[0];
     const correctAnswer = questionAndCorrectAnswer[1];
-    
+
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
     const resultOfValidation = validateAnswer(correctAnswer, answer);
@@ -43,3 +43,5 @@ export const playGame = (gameTask, genQuestionAndCorrectAnswer) => {
 
   console.log(`Congratulations, ${userName}!`);
 };
+
+export default playGame;
