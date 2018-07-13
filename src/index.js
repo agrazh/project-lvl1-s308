@@ -11,7 +11,7 @@ const getName = () => {
   return name;
 };
 
-const isCorrect = (answer, correctAnswer) => String(answer) === String(correctAnswer) ? true : false;
+const isCorrect = (answer, correctAnswer) => String(answer) === String(correctAnswer);
 
 const playGame = (gameTask, genQuestionAndCorrectAnswer) => {
   console.log('Welcome to Brain Games!');
@@ -25,7 +25,7 @@ const playGame = (gameTask, genQuestionAndCorrectAnswer) => {
 
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
-    
+
     if (isCorrect(answer, correctAnswer)) {
       console.log('Correct!');
     } else {
