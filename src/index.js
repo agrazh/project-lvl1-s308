@@ -11,14 +11,7 @@ const getName = () => {
   return name;
 };
 
-const validateAnswer = (correctAnswer, answer) => {
-  if (String(correctAnswer) === String(answer)) {
-    console.log('Correct!');
-    return true;
-  }
-
-  return false;
-};
+const isCorrect = (answer, correctAnswer) => String(answer) === String(correctAnswer) ? true : false;
 
 const playGame = (gameTask, genQuestionAndCorrectAnswer) => {
   console.log('Welcome to Brain Games!');
@@ -32,9 +25,10 @@ const playGame = (gameTask, genQuestionAndCorrectAnswer) => {
 
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
-    const resultOfValidation = validateAnswer(correctAnswer, answer);
-
-    if (!resultOfValidation) {
+    
+    if (isCorrect(answer, correctAnswer)) {
+      console.log('Correct!');
+    } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       return;
