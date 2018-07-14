@@ -8,7 +8,7 @@ const gameTask = 'Find the greatest common divisor of given numbers.';
 const genQuestionAndCorrectAnswer = () => {
   const questionElemets = [randomInt(1, 100), randomInt(1, 100)];
   const question = (`Question: ${questionElemets[0]} ${questionElemets[1]}`);
-  const correctAnswer = findGCD(questionElemets[0], questionElemets[1]);
+  const correctAnswer = String(findGCD(questionElemets[0], questionElemets[1]));
 
   return [question, correctAnswer];
 };

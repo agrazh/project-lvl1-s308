@@ -16,7 +16,7 @@ const genQuestionAndCorrectAnswer = () => {
   for (let i = 1; i <= progressionLength; i += 1) {
     if (i === hiddenNumberPosition) {
       question += '... ';
-      correctAnswer = nextNumber;
+      correctAnswer = String(nextNumber);
     } else {
       question += `${nextNumber} `;
     }

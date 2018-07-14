@@ -11,7 +11,7 @@ const getName = () => {
   return name;
 };
 
-const isCorrect = (answer, correctAnswer) => String(answer) === String(correctAnswer);
+const isCorrect = (answer, correctAnswer) => answer === correctAnswer;
 
 const playGame = (gameTask, genQuestionAndCorrectAnswer) => {
   console.log('Welcome to Brain Games!');
