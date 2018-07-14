@@ -15,35 +15,13 @@ const getDigitsSum = (number) => {
   return digitsSum;
 };
 
-const getMinMaxDigitsQuantity = (number) => {
+const makeBalanced = (number) => {
   const digitsSum = getDigitsSum(number);
-  const digitsQuantity = String(number).length;
-
-  const maxDigitsQuantity = digitsSum % digitsQuantity;
-  const minDigitsQuantity = digitsQuantity - maxDigitsQuantity;
-
-  return [minDigitsQuantity, maxDigitsQuantity];
-};
-
-const getMinMaxDigit = (number) => {
-  const digitsSum = getDigitsSum(number);
-  const digitsQuantity = String(number).length;
-
-  const digitsMean = digitsSum / digitsQuantity;
-  const minDigit = Math.trunc(digitsMean);
+  const minDigit = Math.trunc(digitsSum / String(number).length);
   const maxDigit = minDigit + 1;
 
-  return [minDigit, maxDigit];
-};
-
-const makeBalanced = (number) => {
-  const minMaxDigit = getMinMaxDigit(number);
-  const minDigit = minMaxDigit[0];
-  const maxDigit = minMaxDigit[1];
-
-  const minMaxDigitsQuantity = getMinMaxDigitsQuantity(number);
-  const minDigitsQuantity = minMaxDigitsQuantity[0];
-  const maxDigitsQuantity = minMaxDigitsQuantity[1];
+  const maxDigitsQuantity = digitsSum - minDigit * String(number).length;
+  const minDigitsQuantity = String(number).length - maxDigitsQuantity;
 
   let balancedNumber = '';
   for (let i = 1; i <= minDigitsQuantity; i += 1) {
