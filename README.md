@@ -5,8 +5,9 @@
 
 This package is a set of console mini brain-games.
 * [Description](#description)
-* [Even number](#Even-number-game)
-* [Calculator](#calc)
+** [Games]
+* [Even number game](#even-number-game)
+* [Calculator ](#calc)
 * [Greatest common divisor](#gcd)
 * [Balance](#balance)
 * [Arithmetic progression](#progression)
@@ -21,7 +22,9 @@ Package installation: `$ npm install --global prj1-brain-games`
 
 Now games may be lunched from CLI.
 
-## Even number game
+## Games
+
+### Even number game
 Answer "yes" if the number is even otherwise answer "no".
 Run game: `$ brain-even`
 ![<gif here>](https://repo.github.io/project-lvl1-s308/even.gif)
