@@ -4,14 +4,15 @@
 # Brain Games
 
 This package is a set of console mini brain-games.
+
 * [Description](#description)
-** [Games]
-* [Even number game](#even-number-game)
-* [Calculator ](#calc)
-* [Greatest common divisor](#gcd)
-* [Balance](#balance)
-* [Arithmetic progression](#progression)
-* [Prime number](#prime)
+* [Games](#games)
+  * [Even number](#even-number-game)
+  * [Calculator](#calculator-game)
+  * [Greatest common divisor](#gcd)
+  * [Balance](#balance)
+  * [Arithmetic progression](#progression)
+  * [Prime number](#prime)
 
 ## Description
 Published NPM package you may find [here](https://www.npmjs.com/package/prj1_brain_games).
@@ -26,28 +27,34 @@ Now games may be lunched from CLI.
 
 ### Even number game
 Answer "yes" if the number is even otherwise answer "no".
+
 Run game: `$ brain-even`
-![<gif here>](https://repo.github.io/project-lvl1-s308/even.gif)
 
+[![asciicast](https://asciinema.org/a/191882.png)](https://asciinema.org/a/191882)
 
-## Calculator game
-Answer "yes" if the number is even otherwise answer "no".
+### Calculator game
+What is the result of the expression?
+
 Run game: `$ brain-calc`
 
-##Greatest common divisor game
-Answer "yes" if the number is even otherwise answer "no".
+### Greatest common divisor game
+Find the greatest common divisor of given numbers.
+
 Run game: `$ brain-gcd`
 
-## Balanced number game
-Answer "yes" if the number is even otherwise answer "no".
+### Balanced number game
+Balance the given number.
+
 Run game: `$ brain-balance`
 
-## Arithmetic progression game
-Answer "yes" if the number is even otherwise answer "no".
+### Arithmetic progression game
+What number is missing in this progression?
+
 Run game: `$ brain-progression`
 
-## Prime number game
-Answer "yes" if the number is even otherwise answer "no".
-Run game: `$ brain-even`
+### Prime number game
+Find out if the number is prime. Answer "yes" or "no".
+
+Run game: `$ brain-prime`
 
 
