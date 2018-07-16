@@ -30,7 +30,7 @@ Answer "yes" if the number is even otherwise answer "no".
 
 Run game: `$ brain-even`
 
-![gif](https://agrazh.github.io/storage/project-lvl1-s308/brain-games.gif =604x156)
+<img src="https://agrazh.github.io/storage/project-lvl1-s308/brain-games.gif" height="">
 
 ### Calculator game
 What is the result of the expression?
