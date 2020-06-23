@@ -17,6 +17,4 @@ Package installation: `$ npm install --global prj1-brain-games`
 
 Now apps may be launched from CLI.
 
-In terminal type  `$ brain-` + <Tab> key  to see available apps.
-
-
+In terminal type  `$ brain-` + `<Tab>` key  to see available apps.
